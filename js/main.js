@@ -41,6 +41,9 @@
 		]
 	});
 
+	
+	//prevent duplicate in fancybox
+	// $(document).find('.category__slider .slick-cloned a').removeAttr('data-fancybox');
 	// slider category
 	let num = $('.category');
 
@@ -48,6 +51,7 @@
 		$('#category__slider-' + (i + 1)).slick({
 			slidesToShow: 4,
 			slidesToScroll: 1,
+			infinite: false,
 			prevArrow:
 			'<button class="btn-arrow btn-arrow-prev"><i class="fa fa-angle-left"></i></button>',
 			nextArrow:
@@ -81,6 +85,8 @@
 					}
 				}
 			]
-		})
+		});
 	}
+
+	
 })(jQuery);

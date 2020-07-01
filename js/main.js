@@ -41,4 +41,46 @@
 		]
 	});
 
+	// slider category
+	let num = $('.category');
+
+	for (let i = 0; i < num.length; i++) {
+		$('#category__slider-' + (i + 1)).slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			prevArrow:
+			'<button class="btn-arrow btn-arrow-prev"><i class="fa fa-angle-left"></i></button>',
+			nextArrow:
+			'<button class="btn-arrow btn-arrow-next"><i class="fa fa-angle-right"></i></button>',
+			responsive: [
+				{
+					breakpoint: 1025,
+					settings: {
+						slidesToShow: 3,
+						arrows: false,
+						dots: true,
+						dotsClass: "dots dots-offset-m",
+					}
+				},
+				{
+					breakpoint: 769,
+					settings: {
+						slidesToShow: 2,
+						arrows: false,
+						dots: true,
+						dotsClass: "dots dots-offset-m",
+					}
+				},
+				{
+					breakpoint: 531,
+					settings: {
+						slidesToShow: 1,
+						arrows: false,
+						dots: true,
+						dotsClass: "dots dots-offset-m",
+					}
+				}
+			]
+		})
+	}
 })(jQuery);

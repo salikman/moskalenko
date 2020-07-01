@@ -582,7 +582,8 @@ main {
     color: rgba(255, 255, 255, 0.8); }
 
 #modal-phone {
-  display: none; }
+  display: none;
+  padding: 25px; }
   #modal-phone h2 {
     margin-bottom: 30px;
     text-align: center;
@@ -607,6 +608,74 @@ main {
     width: 100%;
     border: none;
     cursor: pointer; }
+
+.page-cat__header {
+  position: relative;
+  height: 460px;
+  background: url("../img/bg-header.jpg") no-repeat center center/cover; }
+
+.page-cat__title {
+  position: absolute;
+  top: 50%;
+  font-size: 48px;
+  font-weight: 400;
+  text-shadow: 0 4px 11px rgba(255, 255, 255, 0.55);
+  color: #352f31;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.page-cat__content {
+  padding: 50px 0; }
+
+.page-cat .category {
+  margin-bottom: 60px;
+  position: relative; }
+  .page-cat .category__title {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    text-shadow: 0 4px 11px rgba(255, 255, 255, 0.55);
+    color: #352f31; }
+    .page-cat .category__title:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 95px;
+      height: 8px;
+      background-color: #f8d8da;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .page-cat .category__slide a img {
+    margin: 0 auto;
+    max-width: 100%; }
+
+@media (max-width: 1499px) {
+  .page-cat .category__slide a img {
+    max-width: 280px; } }
+
+@media (max-width: 1366px) {
+  .page-cat .category__slide a img {
+    max-width: 250px; } }
+
+@media (max-width: 1240px) {
+  .page-cat__header {
+    height: 300px; }
+  .page-cat .category__slide a img {
+    max-width: 230px; } }
+
+@media (max-width: 768px) {
+  .page-cat__header {
+    height: 200px;
+    text-align: center; }
+  .page-cat__title {
+    margin: 0 auto;
+    font-size: 32px; } }
 
 .home-slider-wrap {
   display: -webkit-box;
